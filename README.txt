@@ -1,0 +1,3 @@
+Designing, developing a site to be a compendium of new designers. Starting with TwentyTen but moving on from there. Taking over from another designer, who did not program. Cleaning up to start with and then... evolving.
+
+luray design notes is being marketed directly to professionals in the design community including interior designers, architects, and space planners in both contract and residential markets, as well as to stylists and decorators in the film and television industries. Register and become part of luray design notes growing network.
