@@ -65,7 +65,8 @@
 				</<?php echo $heading_tag; ?>>
 				 
 
-				<div id="rotating_image"><img src="/wp-content/themes/luraydesign/images/luray_headers/besignedmade.jpg" border="0" height="198" width="640"></div>
+				<div id="rotating_image"><!-- <img src="/wp-content/themes/luraydesign/images/luray_headers/besignedmade.jpg" border="0" height="198" width="640"> --><?php if(function_exists( 'wp_bannerize' ))
+				          wp_bannerize('random=1&limit=1'); ?></div>
 			   <div id="rotating_quote"><p class="design_quote">Best Sustainable Design</p></div>
 			</div><!-- #branding -->
 
