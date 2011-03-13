@@ -60,14 +60,9 @@
 				<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
 				<<?php echo $heading_tag; ?> id="site-title">
 					<span>
-						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://luraydesign.com/wp-content/themes/twentyten/images/luray-logo.gif" border="0"></a>
+						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://luraydesign.com/wp-content/themes/luraydesign/images/luray-logo.gif" border="0"></a>
 					</span>
 				</<?php echo $heading_tag; ?>>
-				
-			<div id="site-description">
-				
-			</div>
-				
 
 				<?php
 					// Check if this is a post or page, if it has a thumbnail, and if it's a big one
