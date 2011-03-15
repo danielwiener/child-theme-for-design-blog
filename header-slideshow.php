@@ -51,14 +51,8 @@
 	wp_head();
 
 ?>
-<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
-	<script type="text/javascript">
-	jQuery(document).ready(function($) {
-	    $('.slideshow').cycle({
-			fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-		});
-	});
-	</script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.cycle.all.min.js"></script> 
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/luraydesign.js"></script> 
 </head>
 
 <body <?php body_class(); ?>>
