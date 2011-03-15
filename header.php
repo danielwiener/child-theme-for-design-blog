@@ -33,7 +33,8 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> 
+<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
 	/* We add some JavaScript to pages with the comment form
@@ -82,7 +83,9 @@
 				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentyten' ); ?>"><?php _e( 'Skip to content', 'twentyten' ); ?></a></div>
 				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
 				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
-				<a href="http://twitter.com/luraydesign" target="_blank" title="Follow me"><img src="/wp-content/themes/luraydesign/images/twit2.png" border="0" width="20" height="20" align="right" /></a><a href="http://www.facebook.com/pages/Luraydesign/141326115929696" target="_blank"  title="Facebook profile"><img src="/wp-content/themes/luraydesign/images/face2.png" border="0" width="20" height="20" align="right" /></a>
+				  <div class="someting">
+				<a href="http://twitter.com/luraydesign" target="_blank" title="Follow me"><img src="/wp-content/themes/luraydesign/images/twit2.png" border="0" width="20" height="20" align="right" /></a><a href="http://www.facebook.com/pages/Luraydesign/141326115929696" target="_blank"  title="Facebook profile"><img src="/wp-content/themes/luraydesign/images/face2.png" border="0" width="20" height="20" align="right" /></a>  
+				 <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fluraydesign.com&amp;layout=button_count&amp;show_faces=false&amp;width=200&amp;height=30&amp;action=like&amp;font=verdana&amp;colorscheme=light"  id="fbLikeIframe" name="fbLikeIframe"  scrolling="no" frameborder="0" allowTransparency="true"  class="fbLikeContainer"  style="border:0; overflow:hidden; width:70px; height:27px; display:inline;"  ></iframe>   </div>
 			</div><!-- #access -->
 		</div><!-- #masthead -->
 	</div><!-- #header -->
