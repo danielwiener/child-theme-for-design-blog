@@ -3,6 +3,7 @@
  * The Header for our theme.
  *
  * Displays all of the <head> section and everything up till <div id="main">
+ * using http://jquery.malsup.com/cycle/basic.html
  *
  * @package WordPress
  * @subpackage Luray Design
@@ -48,8 +49,16 @@
 	 * as styles, scripts, and meta tags.
 	 */
 	wp_head();
-?>
 
+?>
+<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+	    $('.slideshow').cycle({
+			fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		});
+	});
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -66,7 +75,7 @@
 				 
                   <!-- info from http://wordpress.org/extend/plugins/wp-bannerize/faq/  and help section of bannerize plugin page -->
 				<div id="rotating_image"><?php if(function_exists( 'wp_bannerize' ))
-				          wp_bannerize('random=1&limit=1&container_before=&container_after=&before=&after='); ?></div>
+				          wp_bannerize('random=1&limit=&container_before=<div class="slideshow">&container_after=</div>&before=&after='); ?></div>
 			   <div id="rotating_quote"><?php $quote = quotescollection_quote('random=1&ajax_refresh=0'); ?></div>
 			</div><!-- #branding -->
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Development Page     
+ * Template Name: Slideshow Page     
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
