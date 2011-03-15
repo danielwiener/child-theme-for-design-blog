@@ -50,8 +50,15 @@
 	 */
 	wp_head();
 
-?>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.cycle.all.min.js"></script> 
+?> 
+<script type="text/javascript">
+	      jQuery('html').addClass('js'); 
+	    </script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.cycle.all.min.js"></script>
+<style type="text/css">
+      .js .slideshow {display: none;}
+    </style>  
+   
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/luraydesign.js"></script> 
 </head>
 

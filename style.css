@@ -392,7 +392,7 @@ a:hover {
 #rotating_image {
 	float: left;
 	width: 640px;
-/*	border: 1px solid #999;*/
+	border: 0px solid #999;  
 	display: block;
 }
 #rotating_quote {
@@ -400,7 +400,7 @@ a:hover {
 	width: 300px;
 	height: 198px;
 	background: #ACBE6A url('/wp-content/themes/luraydesign/images/rotating_quote_bg.png') no-repeat top left;
-	float: left; 	
+    float: right;    	
 } 
 
 #branding #rotating_quote p.design_quote {
