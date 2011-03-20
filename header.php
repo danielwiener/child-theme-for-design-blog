@@ -85,7 +85,7 @@
 				
 				    <?php endif; ?>
 				
-			   <div id="rotating_quote"><?php $quote = quotescollection_quote('random=1&ajax_refresh=0'); ?></div>
+			   <div id="rotating_quote"><?php // $quote = quotescollection_quote('random=1&ajax_refresh=0'); ?><img src="/wp-content/themes/luraydesign/images/rotating_quote.png"></div>
 			</div><!-- #branding -->
 
 			<div id="access" role="navigation">
