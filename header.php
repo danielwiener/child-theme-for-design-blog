@@ -50,6 +50,8 @@
 	 */
 	wp_head();
 ?>
+<?php if (is_home() || is_front_page()): ?> 
+	<!-- Used this tutorial http://www.learningjquery.com/2008/10/1-way-to-avoid-the-flash-of-unstyled-content -->  
 <script type="text/javascript">
 	      jQuery('html').addClass('js'); 
 	    </script>
@@ -57,8 +59,9 @@
 <style type="text/css">
       .js .slideshow {display: none;}
     </style>  
-   
+
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/luraydesign.js"></script>
+<?php endif; ?>  
 </head>
 
 <body <?php body_class(); ?>>
@@ -73,8 +76,6 @@
 					</span>
 				</<?php echo $heading_tag; ?>>
                  <?php if (is_home() || is_front_page()): ?>
-                 	
-                
 				<div id="rotating_image"><?php if(function_exists( 'wp_bannerize' ))
 				          wp_bannerize('random=1&limit=&container_before=<div class="slideshow">&container_after=</div>&before=&after='); ?></div>
                    <?php else: ?>
