@@ -50,7 +50,15 @@
 	 */
 	wp_head();
 ?>
-
+<script type="text/javascript">
+	      jQuery('html').addClass('js'); 
+	    </script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.cycle.all.min.js"></script>
+<style type="text/css">
+      .js .slideshow {display: none;}
+    </style>  
+   
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/luraydesign.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -64,18 +72,19 @@
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://luraydesign.com/wp-content/themes/luraydesign/images/luray-logo.gif" border="0"></a>
 					</span>
 				</<?php echo $heading_tag; ?>>
-
-				<?php
-					// Check if this is a post or page, if it has a thumbnail, and if it's a big one
-					if ( is_singular() &&
-							has_post_thumbnail( $post->ID ) &&
-							( /* $src, $width, $height */ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'post-thumbnail' ) ) &&
-							$image[1] >= HEADER_IMAGE_WIDTH ) :
-						// Houston, we have a new header image!
-						echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
-					else : ?>
-						<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
-					<?php endif; ?>
+                 <?php if (is_home() || is_front_page()): ?>
+                 	
+                
+				<div id="rotating_image"><?php if(function_exists( 'wp_bannerize' ))
+				          wp_bannerize('random=1&limit=&container_before=<div class="slideshow">&container_after=</div>&before=&after='); ?></div>
+                   <?php else: ?>
+                  <!-- info from http://wordpress.org/extend/plugins/wp-bannerize/faq/  and help section of bannerize plugin page -->
+				<div id="rotating_image"><?php if(function_exists( 'wp_bannerize' ))
+				          wp_bannerize('random=1&limit=1&container_before=&container_after=&before=&after='); ?></div> 
+				
+				    <?php endif; ?>
+				
+			   <div id="rotating_quote"><?php $quote = quotescollection_quote('random=1&ajax_refresh=0'); ?></div>
 			</div><!-- #branding -->
 
 			<div id="access" role="navigation">
