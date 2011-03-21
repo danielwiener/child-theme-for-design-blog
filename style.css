@@ -688,9 +688,12 @@ div.menu li {
 }
 .page-title {
 	color: #000;
-	font-size: 14px;
+	font-size: 25px;
+	letter-spacing: 2px;
 	font-weight: bold;
-	margin: 0 0 36px 0;
+	margin: 0 0 0px 0;
+	text-transform: lowercase; 
+	border-bottom: 1px solid #999;
 }
 .page-title span {
 	color: #333;
