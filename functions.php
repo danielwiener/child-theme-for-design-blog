@@ -27,10 +27,10 @@
 /**
  * Register widgetized areas, including two sidebars and four widget-ready columns in the footer.
  *
- * To override twentyten_widgets_init() in a child theme, remove the action hook and add your own
+ * I overwrote twentyten_widgets_init() in a my child theme with amelia_widgets_init, remove the action hook and add your own
  * function tied to the init hook.
  *
- * @since Twenty Ten 1.0
+ * @since Luray Design 1.1
  * @uses register_sidebar
  */
 function amelia_widgets_init() { 
