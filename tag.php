@@ -3,8 +3,8 @@
  * The template for displaying Tag Archive pages.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage Luray Design
+ * @since Luray Design 1.1
  */
 
 get_header(); ?>
