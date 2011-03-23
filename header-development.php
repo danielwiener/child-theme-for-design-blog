@@ -66,8 +66,9 @@
 				 
                   <!-- info from http://wordpress.org/extend/plugins/wp-bannerize/faq/  and help section of bannerize plugin page -->
 				<div id="rotating_image"><?php if(function_exists( 'wp_bannerize' ))
-				          wp_bannerize('random=1&limit=1&container_before=&container_after=&before=&after='); ?></div>
-			   <div id="rotating_quote"><?php $quote = quotescollection_quote('random=1&ajax_refresh=0'); ?></div>
+				          wp_bannerize('random=1&limit=1&container_before=&container_after=&before=&after='); ?></div> 
+				<!-- #NOTE #CHANGE changed code in plugin, to version 99, be careful if you need to update. http://wordpress.org/extend/plugins/quotes-collection/other_notes/  -->
+			   <div id="rotating_quote"><?php $quote = quotescollection_quote('random=1&ajax_refresh=0&char_limit=160'); ?></div>
 			</div><!-- #branding -->
 
 			<div id="access" role="navigation">
