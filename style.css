@@ -1103,6 +1103,38 @@ img.size-medium,
 	margin: -18px 0 0 0;
 }
 
+/* = Style  for WP Favorite Posts wpfp
+-------------------------------------------------------------- */  
+
+.wpfp-hide { 
+	display: none;
+	}
+.wpfp-img {
+	border: 0;
+	vertical-align: top;
+	margin-right: 0px;
+	}
+#content img {
+	border: 0;
+	vertical-align: top;
+	margin-right: 4px;
+	margin-bottom:0px;
+	margin-top: 2px;
+	}
+.wpfp-span a:link,
+.wpfp-span a:visited {
+	vertical-align: top;
+	color:#333;
+	font-size:12px;
+	text-decoration: none;
+	margin-right: 10px;
+	margin-top: 2px;
+	}
+
+.wpfp-span a:hover {
+	color:#333;
+	text-decoration: none;
+	}
 
 
 /* =Comments
@@ -1454,6 +1486,8 @@ img#wpstats {
 
 
 
+
+
 /* Mobile Safari ( iPad, iPhone and iPod Touch )
 -------------------------------------------------------------- */
 
@@ -1475,9 +1509,6 @@ code {
 }
 
 
-
-/* =Print Style
--------------------------------------------------------------- */
 
 @media print {
 	body {
@@ -1564,4 +1595,4 @@ code {
 	.home .sticky {
 		border: none;
 	}
-}
+}   
