@@ -486,7 +486,8 @@ a:hover {
 	display: block;
 	width: 300px;
 	height: 198px;
-	background: #ACBE6A url('/wp-content/themes/luraydesign/images/rotating_quote_bg2.jpg') no-repeat top left;
+	/*background-color: #fff;*/  
+   /* background: #fff url('/wp-content/themes/luraydesign/images/rotating_quote_bg.png') no-repeat top left;*/ 
     float: right;    	
 } 
 
@@ -505,24 +506,24 @@ q:before, q:after {
 
 .quotescollection_randomquote p {
 	padding: 15px 20px 10px 20px;
-	color: #336600;  
+	color: #000;  
 	font: 13px/19px 'QuicksandLightOblique', Arial, sans-serif;
 }
 
 .quotescollection_randomquote q {
-	font: 17px/23px 'QuicksandLight', Arial, sans-serif; 
-	color: #336600;
+	font: 18px/25px 'QuicksandLightOblique', Arial, sans-serif; 
+	color: #000;
 /*	font-size: 25px;*/ 
 /*	line-height: 35px; */
 }  
 
 .quotescollection_randomquote a {
-	color: #336600;
+	color: #000;
 	text-decoration: none;
 }  
 
 .quotescollection_randomquote a:hover {
-	color: #000;
+	color: #7CAE3B;
 	text-decoration: none;
 }
 
