@@ -511,8 +511,8 @@ q:before, q:after {
 }
 
 .quotescollection_randomquote q {
-	font: 15px/22px 'QuicksandLightOblique', Arial, sans-serif; 
-	color: #000;
+	font: 15px/22px 'QuicksandBookOblique', Arial, sans-serif; 
+	color: #7CAE3B;
 /*	font-size: 25px;*/ 
 /*	line-height: 35px; */
 }  
