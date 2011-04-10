@@ -68,8 +68,7 @@
 				<div id="rotating_image"><?php if(function_exists( 'wp_bannerize' ))
 				          wp_bannerize('random=1&limit=1&container_before=&container_after=&before=&after='); ?></div> 
 				<!-- #NOTE #CHANGE changed code in plugin, to version 99, be careful if you need to update. http://wordpress.org/extend/plugins/quotes-collection/other_notes/  -->
-			   <div id="rotating_quote"><?php $quote = quotescollection_quote('random=1&ajax_refresh=0&char_limit=160'); ?></div>
-			</div><!-- #branding -->
+			  <div id="rotating_quote"><?php // $quote = quotescollection_quote('random=1&ajax_refresh=0'); ?><img src="/wp-content/themes/luraydesign/images/rotating_quote.png"></div> <!-- #branding -->
 
 			<div id="access" role="navigation">
 			  <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>

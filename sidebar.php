@@ -22,7 +22,10 @@
  	<?php if ( ! dynamic_sidebar( 'home-page-sidebar' ) ) :  ?> 
 
 	<?php endif; // end home sidebar widget area  ?> 
-	<?php endif; // end if front page  ?>
+	<?php endif; // end if front page  ?> 
+	<?php if (is_page('header-development')): ?> 
+		      <?php $quote = quotescollection_quote('random=1&ajax_refresh=0'); ?>	
+	<?php endif ?>
 	
 	<?php if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
 
