@@ -507,11 +507,11 @@ q:before, q:after {
 .quotescollection_randomquote p {
 	padding: 15px 20px 10px 20px;
 	color: #000;  
-	font: 13px/19px 'QuicksandLightOblique', Arial, sans-serif;
+	font: 12px/17px 'QuicksandLightOblique', Arial, sans-serif;
 }
 
 .quotescollection_randomquote q {
-	font: 18px/25px 'QuicksandLightOblique', Arial, sans-serif; 
+	font: 15px/22px 'QuicksandLightOblique', Arial, sans-serif; 
 	color: #000;
 /*	font-size: 25px;*/ 
 /*	line-height: 35px; */
