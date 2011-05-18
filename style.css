@@ -8,7 +8,9 @@ Version: 1.1
 Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style 
 Template: twentyten
 */
-
+/* =colors for the site ------------------------------------------
+	#7cae3b - green for links, headlines  
+------------------------------------------------------------------*/
 
 /* Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
@@ -419,15 +421,14 @@ textarea {
  color: black;
  background-color: #d6e5c6;        
 }
-a:link {
-	color:#333;
+a:link, a:visited {
+	color:#7cae3b;
+	text-decoration: none;
 }
-a:visited {
-	color:#333;
-}
-a:active,
-a:hover {
+
+a:active, a:hover {
 	color: #333;
+	text-decoration: none;
 }
 
 /* Text meant only for screen readers */
@@ -1377,7 +1378,7 @@ h3#reply-title {
 }
 .widget-area a:active,
 .widget-area a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 .widget-area .entry-meta {
 	font-size: 11px;
